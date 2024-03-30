@@ -31,7 +31,7 @@ const SingleProduct = () => {
   const addToCart = () => {
     dispatch(addItem(item));
   }
-  return <section className="mt-12">
+  return <section className="mt-12 pb-20">
     <NavHeader text='products' />
     <article className="grid md:grid-cols-2 gap-8 max-w-6xl mt-8 justify-start px-8 md:px-16 lg:px-32">
       <div>
