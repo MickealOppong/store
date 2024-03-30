@@ -16,9 +16,9 @@ const Checkout = () => {
       <SectionTitle title='Your cart is empty' />
     </section>
   }
-  return <section className="px-8 mt-20 max-w-5xl mx-auto lg:px-32">
+  return <section className="px-8 mt-20 max-w-5xl mx-auto lg:px-32 pb-20">
     <SectionTitle title='Checkout' />
-    <div className="flex justify-between">
+    <div className="flex flex-col gap-y-8 justify-between md:flex-row">
       <CheckoutForm />
       <CartTotal />
     </div>

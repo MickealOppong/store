@@ -21,7 +21,7 @@ export const loader = async ({ request }) => {
 const Products = () => {
 
 
-  return <section className="px-8">
+  return <section className="px-8 sm:px-20 md:px-8">
     <Filters />
     <ProductsContainer />
     <PaginationContainer />

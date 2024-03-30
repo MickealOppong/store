@@ -21,8 +21,8 @@ const Filters = () => {
     return sortBy.map((item) => item)
   }
 
-  return <div className="p-8 bg-slate-300 max-w-6xl flex mt-24 mx-auto">
-    <Form className="grid gap-y-4 md:grid-cols-3 lg:grid-cols-4 items-center gap-8 ">
+  return <div className="p-8 bg-slate-300  flex mt-24 ">
+    <Form className="grid gap-y-4 md:grid-cols-3 lg:grid-cols-4 items-center gap-8">
       {/** SEARCH PRODUCT */}
       <FormInput type="text" name="product" defValue={product} label="Search product" size='w-96 md:w-56' />
       {/** CATEGORY */}

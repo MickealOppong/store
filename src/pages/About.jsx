@@ -1,7 +1,7 @@
 
 const About = () => {
   return <section>
-    <span>about</span>
+    <span></span>
   </section>
 }
 export default About;

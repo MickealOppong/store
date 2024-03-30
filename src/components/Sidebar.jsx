@@ -1,8 +1,10 @@
+import NavLinks from "./NavLinks";
+
 const Sidebar = () => {
-  return <ul className="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
+  return <ul className="menu p-4 w-80 min-h-full bg-base-200 text-base-content ">
     {/* Sidebar content here */}
-    <li><a>Sidebar Item 1</a></li>
-    <li><a>Sidebar Item 2</a></li>
+
+    <NavLinks />
   </ul>
 }
 export default Sidebar;

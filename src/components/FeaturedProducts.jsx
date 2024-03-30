@@ -12,8 +12,8 @@ const FeaturedProducts = () => {
       {
         products.map((product) => {
           const { image, title, price } = product.attributes;
-          return <Link to={`/singleProduct/${product.id}`} key={product.id} className="card bg-base-100 shadow-xl p-4 flex flex-col items-center">
-            <img src={image} alt={title} className="w-96 h-56 object-cover p-4" />
+          return <Link to={`/singleProduct/${product.id}`} key={product.id} className="bg-base-100 p-4 flex flex-col items-center border-2">
+            <img src={image} alt={title} className="w-96 h-56 object-cover p-4 " />
             <div className="flex justify-center flex-col items-center gap-2">
               <h2 className="card-title capitalize">{title}</h2>
               <span>{formatPrice(price)}</span>

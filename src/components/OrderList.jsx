@@ -5,7 +5,7 @@ const OrderList = () => {
   const { total, pageCount, page } = meta.pagination;
 
   return <div>
-    <div className="flex items-center gap-x-2 text-gray-600">
+    <div className="flex items-center gap-x-2 text-gray-600 mb-8">
       <h2 className="text-sm capitalize">total orders:</h2>
       <span className="text-sm ">{total}</span>
     </div>
