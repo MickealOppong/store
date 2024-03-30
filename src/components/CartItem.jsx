@@ -12,7 +12,7 @@ const CartItem = ({ image, title, productColour, company, price, amount, cartID 
   }
 
   return <div className="grid grid-cols-4 p-2 justify-between">
-    <img src={image} alt={title} className="w-24 h-24 rounded-md" />
+    <img src={image} alt={title} className="w-16 h-12 md:w-24 md:h-24 rounded-md" />
     <div className="flex flex-col gap-y-2 text-gray-600">
       <h2 className="font-semibold capitalize">{title}</h2>
       <p >{company}</p>
