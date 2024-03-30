@@ -13,7 +13,6 @@ export const navMenu = [
   { id: nanoid(), url: 'cart', text: 'cart' },
   { id: nanoid(), url: 'checkout', text: 'checkout' },
   { id: nanoid(), url: 'orders', text: 'orders' },
-  { id: nanoid(), url: 'about', text: 'about' },
 ]
 
 export const products = [

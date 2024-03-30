@@ -12,6 +12,7 @@ export { default as Loading } from './Loading';
 export { default as NavHeader } from './NavHeader';
 export { default as Navbar } from './Navbar';
 export { default as NewsLetter } from './NewsLetter';
+export { default as OrderList } from './OrderList';
 export { default as PaginationContainer } from './PaginationContainer';
 export { default as ProductGrid } from './ProductGrid';
 export { default as ProductList } from './ProductList';
