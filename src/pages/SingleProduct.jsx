@@ -38,10 +38,10 @@ const SingleProduct = () => {
         <img src={image} alt={title} className="rounded-md w-[15rem] h-[15rem] md:w-[30rem] md:h-[30rem]" />
       </div>
       <div className="flex flex-col gap-y-4 w-[40rem]">
-        <h2 className="text-6xl text-primary capitalize">{title}</h2>
+        <h2 className="text-6xl text-primary capitalize w-80 md:w-full">{title}</h2>
         <p className="text-gray-500 capitalize">{company}</p>
         <p className="text-gray-600">{formatPrice(price)}</p>
-        <p className="text-gray-600">{description}</p>
+        <p className="text-gray-600 w-80 md:w-full">{description}</p>
         <div className="flex gap-x-2">
           <p className="capitalize text-gray-600">colors</p>
           {
