@@ -21,16 +21,16 @@ const Filters = () => {
     return sortBy.map((item) => item)
   }
 
-  return <div className="p-8 bg-slate-300  flex mt-24 max-w-6xl mx-auto">
+  return <div className="p-8 bg-slate-300  flex mt-24 w-80 md:max-w-6xl mx-auto md:w-full">
     <Form className="grid gap-y-4 md:grid-cols-3 lg:grid-cols-4 items-center gap-8">
       {/** SEARCH PRODUCT */}
-      <FormInput type="text" name="product" defValue={product} label="Search product" size='w-96 md:w-56' />
+      <FormInput type="text" name="product" defValue={product} label="Search product" size='w-60 md:w-56' />
       {/** CATEGORY */}
-      <SelectInput data={categoryMetaData()} name='category' label="Select Category" size='w-96 md:w-56' defValue={category} />
+      <SelectInput data={categoryMetaData()} name='category' label="Select Category" size='w-60 md:w-56' defValue={category} />
       {/** COMPANIES */}
-      <SelectInput data={companyMetaData()} name='company' label="Select Company" size='w-96l md:w-56' defValue={company} />
+      <SelectInput data={companyMetaData()} name='company' label="Select Company" size='w-60 md:w-56' defValue={company} />
       {/** SORT BY */}
-      <SelectInput data={sortItems()} name='order' label="Select Category" size='w-96 md:w-56' defValue={order} />
+      <SelectInput data={sortItems()} name='order' label="Select Category" size='w-60 md:w-56' defValue={order} />
       {/** PRICE */}
       <InputRange name="price" label='Select price' price={price} />
       {/** SHIPPING */}
