@@ -2,7 +2,7 @@ import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import { Form, Link } from "react-router-dom";
 
 const NewsLetter = () => {
-  return <div className="flex flex-col gap-y-4">
+  return <div className="flex flex-col gap-y-4 w-60 md:w-full">
     <div className="flex flex-col gap-4">
       <h2 className="uppercase text-base-100">newsletter sign up</h2>
       <h4 className="text-xs py-2 text-gray-300">Receive our latest updates about our products and promotions.</h4>
