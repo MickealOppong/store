@@ -10,11 +10,11 @@ const NewsLetter = () => {
 
     <Form className="flex gap-x-2">
       <input type="text" placeholder="enter your email address" className=" input input-bordered  marker:placeholder-shown:text-xs bg-base-300 w-80" />
-      <button className="btn btn-primary uppercase">submit</button>
+      <button className="btn btn-secondary text-gray-100  tracking-wide uppercase">submit</button>
     </Form>
     <div className="flex flex-col gap-y-2">
       <h2 className="uppercase text-gray-300">stay connected</h2>
-      <div className="flex gap-4">
+      <div className="flex gap-4 text-gray-100">
         <Link to="https://facebook.com" target="_blank"><FaFacebook /></Link>
         <Link to="https://x.com" target="_blank"><FaTwitter /></Link>
         <Link to="https://instagram.com" target="_blank"><FaInstagram /></Link>

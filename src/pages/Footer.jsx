@@ -7,14 +7,14 @@ const Footer = () => {
   const currentYear = () => {
     return new Date().getFullYear();
   }
-  return <footer className="bg-secondary py-12">
-    <div className="max-w-5xl mx-auto flex">
-      <div className="flex gap-x-4 lg:flex-cols">
+  return <footer className="px-8 bg-black py-12">
+    <div className="max-w-5xl mx-auto flex flex-col lg:flex-row">
+      <div className="flex gap-x-4 flex-cols">
         <Links title="shop" data={products} />
         <Links title="information" data={information} />
         <Links title="customer service" data={information} />
       </div>
-      <div className="flex w-full ">
+      <div className="flex w-full mt-8 lg:mt-0 ">
         <NewsLetter />
       </div>
     </div>
