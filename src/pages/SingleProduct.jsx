@@ -35,7 +35,7 @@ const SingleProduct = () => {
     <NavHeader text='products' />
     <article className="grid md:grid-cols-2 gap-8 max-w-6xl mt-8 justify-start px-8 md:px-16 lg:px-32">
       <div>
-        <img src={image} alt={title} className="rounded-md w-[30rem] h-[30rem]" />
+        <img src={image} alt={title} className="rounded-md w-[15rem] h-[15rem] md:w-[30rem] md:h-[30rem]" />
       </div>
       <div className="flex flex-col gap-y-4 w-[40rem]">
         <h2 className="text-6xl text-primary capitalize">{title}</h2>
