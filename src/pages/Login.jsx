@@ -9,10 +9,11 @@ export const action = (store) => async ({ request }) => {
   const data = Object.fromEntries(formData);
   try {
     const response = await customFetch.post('/auth/local', data);
-    console.log(response);
+    const token = response.data.jwt;
     const user = response.data.user;
     store.dispatch(loginUser(response.data))
     localStorage.setItem('user', JSON.stringify(user))
+    localStorage.setItem('jwt', token);
     return redirect('/')
   } catch (error) {
     console.log(error);
@@ -34,8 +35,10 @@ const Login = () => {
     try {
       const response = await customFetch.post('/auth/local', data);
       const user = response.data.user;
+      const token = response.data.jwt;
       dispatch(loginUser(response.data))
       localStorage.setItem('user', JSON.stringify(user))
+      localStorage.setItem('jwt', token);
       navigate('/')
     } catch (error) {
       console.log(error);

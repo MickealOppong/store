@@ -3,9 +3,13 @@ import { createSlice } from "@reduxjs/toolkit";
 const getUserFromStorage = () => {
   return JSON.parse(localStorage.getItem('user')) || null;
 }
+
+const getTokenFromStorage = () => {
+  return (localStorage.getItem('jwt')) || null;
+}
 const initialState = {
   user: getUserFromStorage(),
-  accessToken: null
+  accessToken: getTokenFromStorage()
 }
 
 const userSlice = createSlice({
@@ -21,6 +25,7 @@ const userSlice = createSlice({
     logoutUser: (state) => {
       state.user = null;
       localStorage.removeItem('user')
+      localStorage.removeItem('jwt')
     }
 
   }

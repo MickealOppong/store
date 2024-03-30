@@ -5,7 +5,7 @@ import { ProductGrid, ProductList } from '../components/index';
 
 const ProductsContainer = () => {
   const { products, meta } = useLoaderData();
-  const [layout, setLayout] = useState('grid');
+  const [layout, setLayout] = useState();
   const productTotals = meta.pagination.total;
 
 
