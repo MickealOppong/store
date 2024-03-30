@@ -13,7 +13,7 @@ const Header = () => {
     <div>
       {
         user ? <div className="flex items-center gap-x-4">
-          <label className="text-base-300">Welcome <span className="capitalize">{user.username}</span> </label>
+          <label className="text-base-300">Hello,<span className="capitalize">{user.username}</span> </label>
           <button className="border-2 w-auto rounded-md text-base-300 uppercase text-xs p-2" onClick={() => dispatch(logoutUser())}>logout</button>
         </div> : <div className="flex items-center gap-x-4">
           <Link to='/login' className="flex items-center gap-x-1 capitalize text-base-300">
